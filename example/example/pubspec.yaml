@@ -19,7 +19,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  water_mark:
+  stamp_water_mark:
     path: ../../
 
   # The following adds the Cupertino Icons font to your application.

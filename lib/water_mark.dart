@@ -3,7 +3,7 @@ library water_mark;
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:water_mark/measure_widget_size.dart';
+import 'package:stamp_water_mark/measure_widget_size.dart';
 
 /// @description: water mark can used in page for security .
 /// @author: weichunsheng@jd.com

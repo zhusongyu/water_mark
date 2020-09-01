@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:water_mark/water_mark.dart';
+import 'package:stamp_water_mark/water_mark.dart';
 
 void main() => runApp(MyApp());
 bool isZh = true;

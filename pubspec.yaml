@@ -1,7 +1,12 @@
 name: water_mark
-description: A Flutter package for Watermark.
+description: 水印实现
 version: 0.0.1
 homepage: https://github.com/wei-spring/water_mark
+publish_to: http://pub.jd.com
+author: weichunsheng@jd.com
+email: weichunsheng@jd.com
+department: 基础研发部
+git: https://github.com/wei-spring/water_mark
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

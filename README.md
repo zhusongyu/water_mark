@@ -8,7 +8,7 @@
 ```dart
 //pubspec.yaml add 
 
-water_mark: ^0.0.3
+water_mark: ^0.0.4
 
 var mark = WaterMark();
 
@@ -22,7 +22,7 @@ mark
 
 ## Screenshot
 
-![image](http://storage.360buyimg.com/dqapptest/water_mark_demo.png)
+![image](https://storage.360buyimg.com/dqapptest/water_mark_demo.png)
 
 ## Attention
 ````dart

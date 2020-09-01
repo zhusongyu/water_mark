@@ -1,6 +1,6 @@
 name: stamp_water_mark
 description: 印戳，水印实现
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/wei-spring/water_mark
 git: https://github.com/wei-spring/water_mark
 

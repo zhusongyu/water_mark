@@ -22,7 +22,7 @@ mark
 
 ## Screenshot
 
-![image](http://storage.360buyimg.com/dqapptest/water_mark_demo.jpg)
+![image](http://storage.360buyimg.com/dqapptest/water_mark_demo.png)
 
 ## Attention
 ````dart

@@ -8,7 +8,7 @@
 ```dart
 //pubspec.yaml add 
 
-water_mark: ^0.0.1
+water_mark: ^0.0.3
 
 var mark = WaterMark();
 

@@ -49,7 +49,7 @@ class WaterMark {
 
   /// add water mark
   Future<bool> show(BuildContext context,
-      {int rowCount = 4, int columnCount = 10}) async {
+      {int rowCount = 4, int columnCount = 10, EdgeInsets insets}) async {
     if (_overlayEntry != null) {
       _overlayEntry.remove();
     }
@@ -64,6 +64,7 @@ class WaterMark {
                 columnCount: columnCount,
                 text: markText,
                 textStyle: markStyle,
+                insets: insets,
               ));
     }
     overlayState.insert(_overlayEntry);
@@ -90,12 +91,14 @@ class MarkWidget extends StatelessWidget {
     @required this.columnCount,
     @required this.text,
     @required this.textStyle,
+    this.insets
   }) : super(key: key);
 
   final int rowCount;
   final int columnCount;
   final String text;
   final TextStyle textStyle;
+  final EdgeInsets insets;
 
   //暂时不不用
   //Size screenSize;
@@ -103,12 +106,12 @@ class MarkWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //screenSize = MediaQuery.of(context).size;
-    return IgnorePointer(
-      child: Container(
+    return Container(
+      margin: insets,
           child: Column(
         children: buildMarkList(),
-      )),
-    );
+      ))
+    ;
   }
 
   List<Widget> buildItem() {

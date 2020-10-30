@@ -29,7 +29,9 @@ class _MyHomePageState extends State<MyHomePage> {
   void showWaterMark() {
     mark
         .setMarkText(myController.text.isEmpty
-            ? isZh ? '京东' : 'WaterMark'
+            ? isZh
+                ? '京东'
+                : 'WaterMark'
             : myController.text.toString())
         .setMarkStyle(TextStyle(
             color: Color(0x08000000),
@@ -102,8 +104,44 @@ class _MyHomePageState extends State<MyHomePage> {
                   onPressed: removeWaterMark,
                   icon: Icon(Icons.restore_from_trash),
                   label: Text(isZh ? '移除水印' : 'Remove Mark')),
+              _testWidget()
             ],
           ),
         ));
+  }
+}
+
+class _testWidget extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    return _testWidgetState();
+  }
+}
+
+class _testWidgetState extends State<_testWidget> {
+  var mark = WaterMark();
+
+  void showWaterMark() {
+    mark
+        .setMarkStyle(TextStyle(
+            color: Color(0x08000000),
+            fontSize: 16,
+            decoration: TextDecoration.none))
+        .show(context, rowCount: 3, insets: EdgeInsets.only(top: 200));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return Container(
+      child: FlatButton(
+        child: Text('data'),
+        onPressed: () {
+          mark.setMarkText('inputText').show(context, insets: EdgeInsets.only(top: 200));
+          // showWaterMark();
+        },
+      ),
+    );
   }
 }

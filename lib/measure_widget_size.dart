@@ -32,6 +32,7 @@ class _MeasureSizeState extends State<MeasureSize> {
     );
   }
 
+
   var widgetKey = GlobalKey();
   var oldSize;
 
